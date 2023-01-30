@@ -1,0 +1,19 @@
+.pt-followers{
+    background-image: url("../../../public/img/stats-bg.jpg");
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    padding: 15vh;
+    margin-bottom: 15vh;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.clients {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.clients p{
+    font-size: x-large;
+    font-weight: bolder;
+}
