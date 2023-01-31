@@ -1,0 +1,13 @@
+.carte {
+    display: flex;
+    justify-content: center;
+    
+}
+.carte button{
+    margin: 10px;
+    border: none;
+    background: transparent;
+}
+.carte button:hover{
+    color: rgb(8, 185, 185);
+}

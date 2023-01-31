@@ -22372,6 +22372,7 @@ header {
   padding: 15vh;
   margin-bottom: 15vh;
   color: white;
+  filter: brightness(0.85);
   display: flex;
   justify-content: space-around;
 }
@@ -22385,6 +22386,21 @@ header {
 .clients p {
   font-size: x-large;
   font-weight: bolder;
+}
+
+.carte {
+  display: flex;
+  justify-content: center;
+}
+
+.carte button {
+  margin: 10px;
+  border: none;
+  background: transparent;
+}
+
+.carte button:hover {
+  color: rgb(8, 185, 185);
 }
 
 .pt-about {
