@@ -1,7 +1,12 @@
+.pt-menu{
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
 .carte {
     display: flex;
     justify-content: center;
-    
+    margin-bottom: 5vh;
 }
 .carte button{
     margin: 10px;
@@ -10,4 +15,37 @@
 }
 .carte button:hover{
     color: rgb(8, 185, 185);
+}
+
+.titre-menu{
+    text-align: center;
+}
+.titre-menu p{
+    color: rgb(191, 189, 189);
+}
+.titre-menu h4{
+    color: rgb(1, 184, 184);
+    text-transform: uppercase;
+}
+
+.plats-img{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+}
+.plats-img .plats{
+    margin: 15px;
+}
+
+.plats img{
+    width: 350px;
+}
+.txt-plats{
+    text-align: center;
+}
+.txt-plats p{
+    color: rgb(186, 184, 184);
+}
+.txt-plats p:nth-child(3){
+    color: rgb(0, 213, 213);
 }
