@@ -1,0 +1,39 @@
+.Pt-Book{
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+.book{
+    display: flex;
+    background-color: rgb(216, 215, 215);
+}
+
+.book-img img{
+    width: 400px;
+}
+.place-book{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 18vh;
+}
+.book-co{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: center;
+    width: 450px;
+    height: 150px;
+}
+.book-co input{
+    margin: 15px;
+    border: none;
+}
+.place-book .input-book{
+    background-color: rgb(11, 213, 213);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    height: 40px;
+    width: 145px;
+    margin: 10px;
+}

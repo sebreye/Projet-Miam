@@ -22366,13 +22366,12 @@ header {
 }
 
 .pt-followers {
-  background-image: url("../../../public/img/stats-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../public/img/stats-bg.jpg");
   background-attachment: fixed;
   background-repeat: repeat-y;
   padding: 15vh;
   margin-bottom: 15vh;
   color: white;
-  filter: brightness(0.85);
   display: flex;
   justify-content: space-around;
 }
@@ -22454,6 +22453,7 @@ header {
 .pt-chefs {
   background-color: rgb(202, 200, 200);
   padding-top: 5vh;
+  margin-bottom: 15vh;
 }
 
 .chefs-cards {
@@ -22464,17 +22464,14 @@ header {
   padding: 5vh;
 }
 
-.box {
+.box img {
+  width: 100%;
   --mask:
   radial-gradient(32.81px at 50% calc(100% - 46.25px),#000 99%,#0000 101%) calc(50% - 50px) 0/100px 100%,
   radial-gradient(32.81px at 50% calc(100% + 21.25px),#0000 99%,#000 101%) 50% calc(100% - 25px)/100px 100% repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
   border-radius: 5px;
-}
-
-.box img {
-  width: 100%;
 }
 
 .chefs {
@@ -22491,6 +22488,51 @@ header {
 .txt-chefs p {
   color: grey;
   font-style: italic;
+}
+
+.Pt-Book {
+  margin-left: 20vh;
+  margin-right: 20vh;
+}
+
+.book {
+  display: flex;
+  background-color: rgb(216, 215, 215);
+}
+
+.book-img img {
+  width: 400px;
+}
+
+.place-book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 18vh;
+}
+
+.book-co {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  width: 450px;
+  height: 150px;
+}
+
+.book-co input {
+  margin: 15px;
+  border: none;
+}
+
+.place-book .input-book {
+  background-color: rgb(11, 213, 213);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  height: 40px;
+  width: 145px;
+  margin: 10px;
 }
 
 .pt-about {
@@ -22514,7 +22556,7 @@ header {
 }
 
 .titre-about p {
-  color: rgb(196, 193, 193);
+  color: grey;
 }
 
 .titre-about h2, .titre-about .h2 {

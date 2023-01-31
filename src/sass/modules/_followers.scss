@@ -1,11 +1,11 @@
 .pt-followers{
-    background-image: url("../../../public/img/stats-bg.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url("../../../public/img/stats-bg.jpg");
     background-attachment: fixed;
     background-repeat: repeat-y;
     padding: 15vh;
     margin-bottom: 15vh;
     color: white;
-    filter: brightness(0.85);
     display: flex;
     justify-content: space-around;
 }
