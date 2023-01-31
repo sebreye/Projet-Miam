@@ -22391,6 +22391,7 @@ header {
 .pt-menu {
   margin-left: 20vh;
   margin-right: 20vh;
+  margin-bottom: 15VH;
 }
 
 .carte {
@@ -22411,6 +22412,7 @@ header {
 
 .titre-menu {
   text-align: center;
+  margin: 2vh;
 }
 
 .titre-menu p {
@@ -22438,6 +22440,7 @@ header {
 
 .txt-plats {
   text-align: center;
+  margin: 10px;
 }
 
 .txt-plats p {
@@ -22446,6 +22449,48 @@ header {
 
 .txt-plats p:nth-child(3) {
   color: rgb(0, 213, 213);
+}
+
+.pt-chefs {
+  background-color: rgb(202, 200, 200);
+  padding-top: 5vh;
+}
+
+.chefs-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20vh;
+  margin-right: 20vh;
+  padding: 5vh;
+}
+
+.box {
+  --mask:
+  radial-gradient(32.81px at 50% calc(100% - 46.25px),#000 99%,#0000 101%) calc(50% - 50px) 0/100px 100%,
+  radial-gradient(32.81px at 50% calc(100% + 21.25px),#0000 99%,#000 101%) 50% calc(100% - 25px)/100px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  border-radius: 5px;
+}
+
+.box img {
+  width: 100%;
+}
+
+.chefs {
+  background-color: white;
+  width: 350px;
+  border-radius: 5px;
+}
+
+.txt-chefs {
+  text-align: center;
+  padding: 10px;
+}
+
+.txt-chefs p {
+  color: grey;
+  font-style: italic;
 }
 
 .pt-about {
