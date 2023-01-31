@@ -22330,11 +22330,11 @@ header {
 
 .pt-cards {
   display: flex;
-  margin-left: 20vh;
-  margin-right: 20vh;
+  padding-left: 20vh;
+  padding-right: 20vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   background-color: rgb(205, 205, 205);
-  padding: 5vh;
-  margin-bottom: 15vh;
 }
 
 .cards-big {
@@ -22493,6 +22493,7 @@ header {
 .Pt-Book {
   margin-left: 20vh;
   margin-right: 20vh;
+  margin-bottom: 15vh;
 }
 
 .book {
@@ -22526,6 +22527,58 @@ header {
 }
 
 .place-book .input-book {
+  background-color: rgb(11, 213, 213);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  height: 40px;
+  width: 145px;
+  margin: 10px;
+}
+
+.mini-co {
+  background-color: rgb(229, 226, 226);
+  display: flex;
+  padding: 15px;
+  margin: 5px;
+  width: 450px;
+}
+
+.contact-co {
+  display: grid;
+  width: 900px;
+  grid-template-columns: repeat(2, auto);
+  margin-top: 2vh;
+  margin-right: 18px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: hidden;
+  padding: 15px;
+  margin-top: 2vh;
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.208);
+}
+
+.input-first input {
+  margin: 10px;
+}
+
+.pt-contact {
+  margin-left: 29vh;
+  margin-right: 29vh;
+}
+
+.btn-contact {
   background-color: rgb(11, 213, 213);
   border: none;
   border-radius: 20px;
