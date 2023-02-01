@@ -270,17 +270,38 @@
             </div>
         </section>
     </section>
-    <script>
-        var splide = new Splide( '.splide' );
-splide.mount();
-    </script>
     <!-- fin caroussel1 -->
     <!-- caroussel2 -->
     <section class="Caroussel2">
         <div class="titre-about">
-            <p>TESTIMONIALS</p>
-            <h2>WHAT ARE THEY<span> SAYING ABOUT US</span></h2>
+            <p>EVENTS</p>
+            <h2>SHARE<span> YOUR MOMENTS</span> IN OUR RESTAURANT</h2>
         </div>
+        <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><div class="event1">
+                        <h6>Private Parties</h6>
+                        <p>$289</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum optio ad unde quod tenetur nesciunt, facilis aperiam ipsa quos, provident omnis culpa autem reprehenderit ipsam ab corporis. Corporis, minima enim.</p>
+                    </div></li>
+                    <li class="splide__slide">
+                        <div class="event2">
+                        <h6>Private Parties</h6>
+                        <p>$289</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum optio ad unde quod tenetur nesciunt, facilis aperiam ipsa quos, provident omnis culpa autem reprehenderit ipsam ab corporis. Corporis, minima enim.</p>
+                    </div></li>
+                    <li class="splide__slide">
+                        <div class="event3">
+                        <h6>Private Parties</h6>
+                        <p>$289</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum optio ad unde quod tenetur nesciunt, facilis aperiam ipsa quos, provident omnis culpa autem reprehenderit ipsam ab corporis. Corporis, minima enim.</p>
+                    </div></li>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
     </section>
     <!-- fin caroussel2 -->
     <!-- début section chefs -->
@@ -457,6 +478,18 @@ splide.mount();
             © Copyright <span> <b>Miam</b> </span> .All Rights Reserved
         </div>
     </footer>
+    <script>
+        var elms = document.getElementsByClassName( 'splide' );
+
+for ( var i = 0; i < elms.length; i++ ) {
+    new Splide( elms[0] ).mount();
+    new Splide(elms [1], {
+        type   : 'loop',
+    perPage: 3,
+    focus  : 'center',
+    }).mount()
+}
+    </script>
     <script src="./public/js/main.js"></script>
 </body>
 

@@ -22652,6 +22652,46 @@ header {
   font-style: italic;
 }
 
+.Caroussel2 {
+  padding: 20vh;
+}
+
+.event1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../public/img/events-1.jpg");
+  background-position: center;
+  color: white;
+  height: 450px;
+  width: 350px;
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.event2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../public/img/events-2.jpg");
+  background-position: center;
+  color: white;
+  height: 450px;
+  width: 350px;
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.event3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../public/img/events-3.jpg");
+  background-position: center;
+  color: white;
+  height: 450px;
+  width: 350px;
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .pt-chefs {
   background-color: rgb(202, 200, 200);
   padding-top: 5vh;
