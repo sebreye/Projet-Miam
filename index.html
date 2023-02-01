@@ -24,7 +24,36 @@
                 <li>Contact</li>
             </ul>
         </div>
-        <input type="button" value="Book a a Table">
+        <div class="modal-dark">
+            <div>	
+            <input type="checkbox" id="toggle"/>
+            <label for="toggle"></label>
+            </div>
+            <input type="button" value="Book a a Table" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+        </div>
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              
+              <div class="container">
+                
+                <input class="username" type="text" placeholder="Enter Username" name="uname" required>
+          
+                
+                <input class="password" type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+            </form>
+        </div>
+          
+        
     </div>
     <!-- fin de navbar -->
 
@@ -192,6 +221,13 @@
     </section>
     <!-- fin menu -->
     <!-- caroussel1 -->
+    <section class="Caroussel1">
+        <div class="titre-about">
+            <p>TESTIMONIALS</p>
+            <h2>WHAT ARE THEY<span> SAYING ABOUT US</span></h2>
+            
+        </div>
+    </section>
     <!-- fin caroussel1 -->
         <!-- caroussel2 -->
     <!-- fin caroussel2 -->
@@ -313,10 +349,53 @@
             </div>
             <input type="text" name="" id="" placeholder="subject" style="width: 900px;">
             <div>
-                <textarea name="" id="" cols="120" rows="4" style="margin: 20px;"></textarea>
+                <textarea name="" id="" cols="120" rows="4" placeholder="Message" style="margin: 20px;"></textarea>
             </div>
             <button class="btn-contact">Send Message</button>
         </div>
     </section>
+    <!-- fin section contact -->
+    <footer>
+        <div class="info-footer">
+            <div class="info">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <h6>Address</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <h6>Reservations</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <h6>Opening Hours</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <h6>follow Us</h6>
+                    <ul>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-whatsapp"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copy">
+        © Copyright  <span> <b>Miam</b> </span> .All Rights Reserved
+        </div>
+    </footer>
+    <script src="./public/js/main.js"></script>
 </body>
 </html>
