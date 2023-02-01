@@ -22625,6 +22625,30 @@ header {
   color: rgb(0, 213, 213);
 }
 
+.Caroussel1 {
+  margin-bottom: 15vh;
+}
+
+.splide {
+  background-color: rgb(208, 206, 206);
+  padding: 20vh;
+}
+
+.splide__slide {
+  display: flex;
+  justify-content: space-around;
+  padding: 5vh;
+}
+
+.splide__slide img {
+  width: 100px;
+  border-radius: 55%;
+}
+
+.splide__slide div {
+  width: 700px;
+}
+
 .pt-chefs {
   background-color: rgb(202, 200, 200);
   padding-top: 5vh;
