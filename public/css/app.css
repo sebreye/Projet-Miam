@@ -22635,9 +22635,8 @@ header {
 }
 
 .splide {
-  overflow: hidden;
-  max-width: 700px;
-  position: relative;
+  margin-left: 20vh;
+  margin-right: 20vh;
 }
 
 .carousel_item, .carousel_item--hidden {
@@ -22651,7 +22650,8 @@ header {
 }
 
 .carousel_item--visible {
-  display: block;
+  display: flex;
+  justify-content: space-between;
 }
 
 .carousel_item img {
@@ -22662,12 +22662,10 @@ header {
 }
 
 .carousel_actions {
+  position: relative;
   display: flex;
-  width: 100%;
   justify-content: space-between;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: -20px;
 }
 
 .caroussel_actions button {
@@ -22825,70 +22823,89 @@ header {
   padding-bottom: 5vh;
 }
 
-.gallery1 {
-  background-image: url("../../../public/img/gallery/gallery-1.jpg");
-  width: 250px;
-  height: 150px;
-  background-position: center;
-  background-size: cover;
+.wrapper {
+  display: flex;
+  max-width: 1200px;
+  position: relative;
 }
 
-.gallery2 {
-  background-image: url("../../../public/img/gallery/gallery-2.jpg");
-  width: 250px;
-  height: 150px;
-  background-position: center;
-  background-size: cover;
+.wrapper i {
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
 }
 
-.gallery3 {
-  background-image: url("../../../public/img/gallery/gallery-3.jpg");
-  width: 250px;
-  height: 150px;
-  background-position: center;
-  background-size: cover;
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.9);
 }
 
-.gallery4 {
-  background-image: url("../../../public/img/gallery/gallery-4.jpg");
-  width: 250px;
-  height: 150px;
-  background-position: center;
-  background-size: cover;
+.wrapper i:hover {
+  background: #f2f2f2;
 }
 
-.gallery5 {
-  background-image: url("../../../public/img/gallery/gallery-5.jpg");
-  width: 250px;
-  height: 150px;
-  background-position: center;
-  background-size: cover;
+.wrapper i:first-child {
+  left: -22px;
+  display: none;
 }
 
-.gallery6 {
-  background-image: url("../../../public/img/gallery/gallery-6.jpg");
-  width: 250px;
-  height: 150px;
-  background-position: center;
-  background-size: cover;
+.wrapper i:last-child {
+  right: -22px;
 }
 
-.gallery7 {
-  background-image: url("../../../public/img/gallery/gallery-7.jpg");
-  width: 250px;
-  height: 150px;
-  background-position: center;
-  background-size: cover;
+.wrapper .carousel {
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
 }
 
-.gallery8 {
-  background-image: url("../../../public/img/gallery/gallery-8.jpg");
-  width: 250px;
-  height: 150px;
-  background-position: center;
-  background-size: cover;
+.carousel.dragging {
+  cursor: -webkit-grab;
+  cursor: grab;
+  scroll-behavior: auto;
 }
 
+.carousel.dragging img {
+  pointer-events: none;
+}
+
+.carousel img {
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-left: 14px;
+  width: 33.3333333333%;
+}
+
+.carousel img:first-child {
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
+}
 .mini-co {
   background-color: rgb(229, 226, 226);
   display: flex;
@@ -22919,7 +22936,7 @@ header {
   border-style: hidden;
   padding: px;
   margin-top: 2vh;
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.208);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .input-first input {
