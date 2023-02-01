@@ -1,22 +1,26 @@
 .Caroussel1{
     margin-bottom: 15vh;
-}
-
-
-.splide{
     background-color: rgb(208, 206, 206);
     padding: 20vh;
 }
-.splide__slide{
+
+
+
+.Caroussel1 .splide__slide{
     display: flex;
     justify-content: space-around;
     padding: 5vh;
     
 }
-.splide__slide img{
+.Caroussel1 .splide__slide img{
     width: 100px;
+    height: 100px;
     border-radius: 55%;
+    border: 2px solid white;
 }
-.splide__slide div{
+.Caroussel1 .splide__slide div{
     width: 700px;
+}
+.Caroussel1 .splide__slide div #text{
+    font-style: italic;
 }
