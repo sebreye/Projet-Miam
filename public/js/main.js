@@ -13,23 +13,83 @@ window.onclick = function(event) {
 
 let dark = document.querySelector('label')
 let body = document.querySelector('body')
-let header = document.querySelector('header')
-let h5 = document.querySelectorAll('h5')
-let btn = document.querySelector('.btn2-header')
-let cards = document.querySelector(".pt-cards")
-let paraCard = document.querySelector(".cards")
-let chefs = document.querySelector('.pt-chefs')
-console.log(chefs);
+let darkMode = 'dark'
 dark.addEventListener('click', ()=>{
-    body.style.backgroundColor = "black";
-    body.style.color = "white";
-    // header.style.backgroundColor = "black";
-    // h5.style.color = "black";
-    // btn.style.color = "white";
-    // cards.style.backgroundColor = "black";
-    // paraCard.style.color = "black";
-    // chefs.style.color= "none"
+    if (body.classList.contains("dark")) {
+        body.classList.remove('dark')
+    }else{
+        body.classList.add('dark')
+    }
 })
+
+
+// FULL JS
+const menuButtons = document.querySelectorAll('.carte button');
+const menuSection = document.querySelector('.full-js');
+
+menuButtons.forEach(button => {
+    button.addEventListener('click', function() {
+    while (menuSection.firstChild) {
+    menuSection.removeChild(menuSection.firstChild);
+    }
+
+    const title = document.createElement('div');
+    title.classList.add('titre-menu');
+    const titleText = document.createElement('p');
+    titleText.textContent = 'MENU';
+    title.appendChild(titleText);
+    const dishType = document.createElement('h4');
+    dishType.textContent = button.textContent;
+    title.appendChild(dishType);
+    menuSection.appendChild(title);
+
+    const dishes = document.createElement('div');
+    dishes.classList.add('plats-img');
+
+    for (let i = 1; i <= 6; i++) {
+        const dish = document.createElement('div');
+        dish.classList.add('plats');
+        const dishImg = document.createElement('img');
+        dishImg.src = `./public/img/menu/menu-item-${i}.png`;
+        dishImg.alt = '';
+        dish.appendChild(dishImg);
+        const dishText = document.createElement('div');
+        dishText.classList.add('txt-plats');
+        const dishTitle = document.createElement('h5');
+        dishTitle.textContent = 'Plats';
+        dishText.appendChild(dishTitle);
+        const dishDesc = document.createElement('p');
+        dishDesc.textContent = 'Lorem ipsum dolor sit amet.';
+        dishText.appendChild(dishDesc);
+        const dishPrice = document.createElement('p');
+        dishPrice.textContent = '10$';
+        dishText.appendChild(dishPrice);
+        dish.appendChild(dishText);
+        dishes.appendChild(dish);
+    }
+
+    menuSection.appendChild(dishes);
+});
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// FIN FULL JS
 
 let slidePosition = 0;
 let slides = document.getElementsByClassName('carousel_item')
@@ -131,3 +191,7 @@ carousel.addEventListener("touchstart", dragStart);
 document.addEventListener("mousemove", dragging);
 carousel.addEventListener("touchmove", dragging);
 document.addEventListener("mouseup", dragStop);
+
+// carousel2
+
+
