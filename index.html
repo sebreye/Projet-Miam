@@ -379,6 +379,26 @@
     </section>
     <!-- fin book -->
     <!-- carussel3 -->
+    <section class="Caroussel3">
+        <div class="titre-about">
+            <p> BOOK A TABLE</p>
+            <h2>BOOK<span> YOUR STAY </span> WITH US</h2>
+        </div>
+        <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="./public/img/gallery/gallery-1.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="./public/img/gallery/gallery-2.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="./public/img/gallery/gallery-3.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="./public/img/gallery/gallery-4.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="./public/img/gallery/gallery-5.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="./public/img/gallery/gallery-6.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="./public/img/gallery/gallery-7.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="./public/img/gallery/gallery-8.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+    </section>
     <!-- fin caroussel3 -->
 
     <!-- début section contact -->
@@ -437,6 +457,7 @@
         </div>
     </section>
     <!-- fin section contact -->
+    <!-- footer -->
     <footer>
         <div class="info-footer">
             <div class="info">
@@ -478,6 +499,7 @@
             © Copyright <span> <b>Miam</b> </span> .All Rights Reserved
         </div>
     </footer>
+    <!-- fin footer -->
     <script>
         var elms = document.getElementsByClassName( 'splide' );
 
@@ -488,6 +510,11 @@ for ( var i = 0; i < elms.length; i++ ) {
     perPage: 3,
     focus  : 'center',
     }).mount()
+    new Splide(elms[2], {
+        type   : 'loop',
+    perPage: 5,
+    focus  : 'center',
+    })
 }
     </script>
     <script src="./public/js/main.js"></script>

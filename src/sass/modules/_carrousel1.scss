@@ -1,11 +1,16 @@
 .Caroussel1{
     margin-bottom: 15vh;
     background-color: rgb(208, 206, 206);
-    padding: 20vh;
+    padding-left: 20vh;
+    padding-right: 20vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 
-
+.Caroussel1 .splide{
+    margin: 2vh;
+}
 .Caroussel1 .splide__slide{
     display: flex;
     justify-content: space-around;
