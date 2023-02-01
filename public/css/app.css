@@ -22296,7 +22296,7 @@ textarea.form-control-lg {
 }
 
 .nav ul li:hover {
-  color: #02c9cc;
+  color: #00bdc7;
 }
 
 .navbar input {
@@ -22306,6 +22306,10 @@ textarea.form-control-lg {
   color: white;
   height: 40px;
   width: 145px;
+}
+
+.navbar input:hover {
+  background-color: red;
 }
 
 .modal-dark {
@@ -22509,6 +22513,10 @@ header {
   box-shadow: 0px 0px 0px 2px rgba(255, 0, 0, 0.121);
 }
 
+.btn1-header:hover {
+  background-color: red;
+}
+
 .btn2-header {
   background: transparent;
   border: none;
@@ -22520,6 +22528,10 @@ header {
 .fa-regular {
   color: rgb(3, 175, 175);
   font-size: x-large;
+}
+
+.fa-regular:hover {
+  color: red;
 }
 
 .pt-img img {
@@ -22561,6 +22573,11 @@ header {
   margin: 15px;
   width: 270px;
   padding: 15px;
+  transition: 1s;
+}
+
+.cards:hover {
+  transform: scale(1.1);
 }
 
 .pt-followers {
@@ -22865,6 +22882,11 @@ header {
   background-color: white;
   width: 350px;
   border-radius: 5px;
+  transition: 1s;
+}
+
+.chefs:hover {
+  transform: scale(1.1);
 }
 
 .txt-chefs {

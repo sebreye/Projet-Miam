@@ -12,6 +12,7 @@
     margin-right: 20vh;
     padding: 5vh;
 }
+
 .box img{
     width: 100%;
     --mask:
@@ -26,6 +27,12 @@
     background-color: white;
     width: 350px;
     border-radius: 5px;
+    transition: 1s;
+}
+.chefs:hover{
+    -ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(1.1);
 }
 .txt-chefs{
     text-align: center;
