@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css">
     <link rel="stylesheet" href="./public/css/app.css">
-    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <title>Document</title>
     
     
@@ -251,22 +249,22 @@
         <section class="splide" aria-label="Splide Basic HTML Example">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide"> <div>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti enim,
-                        amet labore facilis, culpa maxime eius asperiores laboriosam saepe possimus error commodi ut ab
-                        vitae aut, eaque magnam. Ad, culpa. <h6>Jena Karlis</h6>
+                    <li class="carousel_item carousel_item--visible"> <div><p style="font-style: italic;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, suscipit! Culpa suscipit totam facere itaque recusandae quam tempora minima animi, veniam facilis sed nesciunt ipsam, laboriosam illo? Repellat, earum nostrum.</p>. <h6>Jena Karlis</h6>
                         <p>Store Owner</p> </div>     <img src="./public/img/testimonials/testimonials-3.jpg" alt="">
                     </li>
-                    <li class="splide__slide"><div>
+                    <li class="carousel_item"><div>
                         <p style="font-style: italic;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, suscipit! Culpa suscipit totam facere itaque recusandae quam tempora minima animi, veniam facilis sed nesciunt ipsam, laboriosam illo? Repellat, earum nostrum.</p>
                         <h6>Jena Karlis</h6>
                         <p>Store Owner</p> </div> <img src="./public/img/testimonials/testimonials-1.jpg" alt="">
                     </li>
-                    <li class="splide__slide"><div>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti enim,
-                        amet labore facilis, culpa maxime eius asperiores laboriosam saepe possimus error commodi ut ab
-                        vitae aut, eaque magnam. Ad, culpa. <h6>Jena Karlis</h6>
+                    <li class="carousel_item"><div><p style="font-style: italic;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, suscipit! Culpa suscipit totam facere itaque recusandae quam tempora minima animi, veniam facilis sed nesciunt ipsam, laboriosam illo? Repellat, earum nostrum.</p> <h6>Jena Karlis</h6>
                         <p>Store Owner</p> </div> <img src="./public/img/testimonials/testimonials-2.jpg" alt="">
                     </li>
                 </ul>
+            </div>
+            <div class="caroussel_actions">
+                <button id="carousel_button--prev"></button>
+                <button id="carousel_button--next"></button>
             </div>
         </section>
     </section>
@@ -387,14 +385,46 @@
         <section class="splide" aria-label="Splide Basic HTML Example">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide"><img src="./public/img/gallery/gallery-1.jpg" alt=""></li>
-                    <li class="splide__slide"><img src="./public/img/gallery/gallery-2.jpg" alt=""></li>
-                    <li class="splide__slide"><img src="./public/img/gallery/gallery-3.jpg" alt=""></li>
-                    <li class="splide__slide"><img src="./public/img/gallery/gallery-4.jpg" alt=""></li>
-                    <li class="splide__slide"><img src="./public/img/gallery/gallery-5.jpg" alt=""></li>
-                    <li class="splide__slide"><img src="./public/img/gallery/gallery-6.jpg" alt=""></li>
-                    <li class="splide__slide"><img src="./public/img/gallery/gallery-7.jpg" alt=""></li>
-                    <li class="splide__slide"><img src="./public/img/gallery/gallery-8.jpg" alt=""></li>
+                    <li class="splide__slide">
+                        <div class="gallery1">
+                            
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="gallery2">
+                            
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="gallery3">
+                            
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="gallery4">
+                            
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="gallery5">
+                            
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="gallery6">
+                            
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="gallery7">
+                            
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="gallery8">
+                            
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -500,23 +530,7 @@
         </div>
     </footer>
     <!-- fin footer -->
-    <script>
-        var elms = document.getElementsByClassName( 'splide' );
-
-for ( var i = 0; i < elms.length; i++ ) {
-    new Splide( elms[0] ).mount();
-    new Splide(elms [1], {
-        type   : 'loop',
-    perPage: 3,
-    focus  : 'center',
-    }).mount()
-    new Splide(elms[2], {
-        type   : 'loop',
-    perPage: 5,
-    focus  : 'center',
-    })
-}
-    </script>
+    
     <script src="./public/js/main.js"></script>
 </body>
 
