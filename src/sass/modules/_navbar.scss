@@ -1,7 +1,9 @@
 .navbar{
     display: flex;
     justify-content: space-around;
-
+    position: sticky;
+    top: 0;
+    background-color: #fefefe;
 }
 .titre-nav span{
     color: aqua;

@@ -22259,6 +22259,10 @@ textarea.form-control-lg {
 .navbar {
   display: flex;
   justify-content: space-around;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fefefe;
 }
 
 .titre-nav span {
@@ -23237,6 +23241,10 @@ footer {
 .dark {
   background-color: black;
   color: white;
+}
+
+.dark .navbar {
+  background-color: black;
 }
 
 .dark header {
