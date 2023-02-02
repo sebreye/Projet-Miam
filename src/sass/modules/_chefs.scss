@@ -42,3 +42,12 @@
     color: grey;
     font-style: italic;
 }
+
+@media only screen and (max-width:1024px){
+    .chefs{
+        margin: 10px;
+    }
+    .box{
+        width: 250px;
+    }
+}

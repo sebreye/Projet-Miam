@@ -29,6 +29,9 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.btn-text1{
+    width: 900px;
+}
 .input-first input{
     margin: 10px;
 }
@@ -45,4 +48,16 @@
     height: 40px;
     width: 145px;
     margin: 10px;
+}
+@media only screen and (max-width: 1024px){
+    .input-first{
+        display: flex;
+        width: 570px;
+    }
+    .btn-text1 {
+        width: 555px;
+    }
+    .info-contact div textarea{
+        width: 555px;
+    }
 }

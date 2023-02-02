@@ -38,3 +38,25 @@
     width: 145px;
     margin: 10px;
 }
+@media only screen and (max-width: 1024px){
+    .place-book{
+        padding-left: 0;
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .book-co{
+        grid-template-columns: repeat(2, auto);
+        width: 350px;
+        height: 250px;
+    }
+    .place-book textarea{
+        width: 350px;
+        margin-right: 0;
+    }
+    .place-book .input-book {
+        margin-left:  15vh;
+    }
+}

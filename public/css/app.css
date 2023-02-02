@@ -22853,6 +22853,14 @@ header {
   font-style: italic;
 }
 
+@media only screen and (max-width: 1024px) {
+  .chefs {
+    margin: 10px;
+  }
+  .box {
+    width: 250px;
+  }
+}
 .Pt-Book {
   margin-left: 20vh;
   margin-right: 20vh;
@@ -22899,6 +22907,28 @@ header {
   margin: 10px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .place-book {
+    padding-left: 0;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .book-co {
+    grid-template-columns: repeat(2, auto);
+    width: 350px;
+    height: 250px;
+  }
+  .place-book textarea {
+    width: 350px;
+    margin-right: 0;
+  }
+  .place-book .input-book {
+    margin-left: 15vh;
+  }
+}
 .Caroussel3 {
   background-color: rgb(196, 195, 195);
   padding-left: 20vh;
@@ -23026,6 +23056,10 @@ header {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.btn-text1 {
+  width: 900px;
+}
+
 .input-first input {
   margin: 10px;
 }
@@ -23046,6 +23080,18 @@ header {
   margin: 10px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .input-first {
+    display: flex;
+    width: 570px;
+  }
+  .btn-text1 {
+    width: 555px;
+  }
+  .info-contact div textarea {
+    width: 555px;
+  }
+}
 footer {
   background-color: rgb(29, 28, 28);
   color: white;
