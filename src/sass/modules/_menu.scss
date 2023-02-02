@@ -54,3 +54,11 @@
 .txt-plats p:nth-child(3){
     color: rgb(0, 213, 213);
 }
+@media only screen and (max-width: 1024px) {
+    .plats-img{
+        justify-content: center;
+    }
+    .plats img{
+        width: 250px;
+    }
+}

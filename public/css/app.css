@@ -22686,6 +22686,14 @@ header {
   color: rgb(0, 213, 213);
 }
 
+@media only screen and (max-width: 1024px) {
+  .plats-img {
+    justify-content: center;
+  }
+  .plats img {
+    width: 250px;
+  }
+}
 .Caroussel1 {
   margin-bottom: 15vh;
   background-color: rgb(208, 206, 206);
@@ -22786,6 +22794,20 @@ header {
   margin: 10px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .event1 {
+    width: 250px;
+    height: 350px;
+  }
+  .event2 {
+    width: 250px;
+    height: 350px;
+  }
+  .event3 {
+    width: 250px;
+    height: 350px;
+  }
+}
 .pt-chefs {
   background-color: rgb(202, 200, 200);
   padding-top: 5vh;
