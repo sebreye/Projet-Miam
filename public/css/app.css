@@ -22994,7 +22994,7 @@ header {
 }
 
 .carousel img {
-  height: 340px;
+  height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-user-select: none;
@@ -23002,7 +23002,7 @@ header {
       -ms-user-select: none;
           user-select: none;
   margin-left: 14px;
-  width: 33.3333333333%;
+  width: 20%;
 }
 
 .carousel img:hover {

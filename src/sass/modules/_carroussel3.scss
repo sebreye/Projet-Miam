@@ -53,11 +53,11 @@
     pointer-events: none;
   }
   .carousel img{
-    height: 340px;
+    height: 150px;
     object-fit: cover;
     user-select: none;
     margin-left: 14px;
-    width: calc(100% / 3);
+    width: calc(100% / 5);
   }
 .carousel img:hover{
     border: 10px solid rgb(3, 172, 172);

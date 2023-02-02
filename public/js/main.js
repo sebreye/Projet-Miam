@@ -202,6 +202,9 @@ const cards = document.querySelectorAll('.cards-carou');
 const leftButton = document.querySelector('#left');
 const rightButton = document.querySelector('#right');
 
+carousel1.style.transition = "all 0.5s ease-in-out";
+
+
 rightButton.addEventListener('click', function() {
     const firstCard = carousel1.firstElementChild;
     carousel1.appendChild(firstCard);
