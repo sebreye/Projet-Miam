@@ -195,3 +195,27 @@ document.addEventListener("mouseup", dragStop);
 // carousel2
 
 
+
+
+const carousel1 = document.querySelector('.carou');
+const cards = document.querySelectorAll('.cards-carou');
+const leftButton = document.querySelector('#left');
+const rightButton = document.querySelector('#right');
+
+rightButton.addEventListener('click', function() {
+    const firstCard = carousel1.firstElementChild;
+    carousel1.appendChild(firstCard);
+    carousel1.style.left = '-33.33%';
+    setTimeout(function() {
+    carousel1.style.left = '0%';
+    }, 50);
+});
+
+leftButton.addEventListener('click', function() {
+    const lastCard = carousel1.lastElementChild;
+    carousel1.insertBefore(lastCard, carousel1.firstElementChild);
+    carousel1.style.left = '33.33%';
+    setTimeout(function() {
+    carousel1.style.left = '0%';
+    }, 50);
+});

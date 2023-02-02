@@ -22773,87 +22773,17 @@ header {
 
 .wrap {
   display: flex;
-  max-width: 1200px;
-  position: relative;
+  justify-content: space-around;
 }
 
-.wrap i {
-  top: 50%;
-  height: 44px;
-  width: 44px;
-  color: #343F4F;
-  cursor: pointer;
-  font-size: 1.15rem;
-  position: absolute;
-  text-align: center;
-  line-height: 44px;
-  background: #fff;
-  border-radius: 50%;
-  transform: translateY(-50%);
-  transition: transform 0.1s linear;
+.carou {
+  display: flex;
 }
 
-.wrap i:active {
-  transform: translateY(-50%) scale(0.9);
+.cards-carou {
+  margin: 10px;
 }
 
-.wrap i:hover {
-  background: #f2f2f2;
-}
-
-.wrap i:first-child {
-  left: -22px;
-  display: none;
-}
-
-.wrap i:last-child {
-  right: -22px;
-}
-
-.wrap .carou {
-  font-size: 0px;
-  cursor: pointer;
-  overflow: hidden;
-  white-space: nowrap;
-  scroll-behavior: smooth;
-}
-
-.carou.dragging {
-  cursor: -webkit-grab;
-  cursor: grab;
-  scroll-behavior: auto;
-}
-
-.carou.dragging .cards-carou {
-  pointer-events: none;
-}
-
-.carou .cards-carou {
-  height: 340px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  margin-left: 14px;
-  width: 33.3333333333%;
-}
-
-.carou .cards-carou:first-child {
-  margin-left: 0px;
-}
-
-@media screen and (max-width: 900px) {
-  .carou .cards-carou {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 550px) {
-  .carou .cards-carou {
-    width: 100%;
-  }
-}
 .pt-chefs {
   background-color: rgb(202, 200, 200);
   padding-top: 5vh;
