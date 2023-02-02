@@ -39,3 +39,25 @@
         -webkit-transform: scale(0.5);
         transform: scale(1.1);
 }
+
+@media only screen and (max-width: 1024px){
+    .pt-cards{
+        padding-left: 6vh;
+    }
+    .cards-big{
+        width: 270px;
+        height: 300px
+    }
+    .cards-big p{
+        width: 240px
+    }
+    .cards{
+        width: 200px;
+        height: 280px
+    }
+    .cards p{
+        width: 170px;
+        height: 270px
+    }
+};
+    

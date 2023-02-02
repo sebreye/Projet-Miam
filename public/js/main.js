@@ -91,45 +91,45 @@ menuButtons.forEach(button => {
 
 // FIN FULL JS
 
-let slidePosition = 0;
-let slides = document.getElementsByClassName('carousel_item')
-let totalslides = slides.length;
-let btnNext = document.getElementById
-('carousel_button--next')
-let btnPrev = document.getElementById('carousel_button--prev')
+// let slidePosition = 0;
+// let slides = document.getElementsByClassName('carousel_item')
+// let totalslides = slides.length;
+// let btnNext = document.getElementById
+// ('carousel_button--next')
+// let btnPrev = document.getElementById('carousel_button--prev')
 
-btnNext.addEventListener('click', ()=>{
-    moveToNextSlide()
-})
-btnPrev.addEventListener('click', ()=>{
-    moveToPrevSlide()
-})
+// btnNext.addEventListener('click', ()=>{
+//     moveToNextSlide()
+// })
+// btnPrev.addEventListener('click', ()=>{
+//     moveToPrevSlide()
+// })
 
-function updateSlidePosition() {
-    for (let slide of slides){
-        slide.classList
-        .remove('carousel_item--visible')
-        slide.classList.add('carousel_item--hidden')
-    }
+// function updateSlidePosition() {
+//     for (let slide of slides){
+//         slide.classList
+//         .remove('carousel_item--visible')
+//         slide.classList.add('carousel_item--hidden')
+//     }
 
-    slides[slidePosition].classList.add('carousel_item--visible')
-}
-function moveToNextSlide() {
-    updateSlidePosition()
-    if (slidePosition === totalslides - 1) {
-        slidePosition = 0;
-    }else{
-        slidePosition++
-    }
-}
-function moveToPrevSlide() {
-    updateSlidePosition()
-    if (slidePosition === 0) {
-        slidePosition = totalslides - 1;
-    }else{
-        slidePosition--
-    }
-}
+//     slides[slidePosition].classList.add('carousel_item--visible')
+// }
+// function moveToNextSlide() {
+//     updateSlidePosition()
+//     if (slidePosition === totalslides - 1) {
+//         slidePosition = 0;
+//     }else{
+//         slidePosition++
+//     }
+// }
+// function moveToPrevSlide() {
+//     updateSlidePosition()
+//     if (slidePosition === 0) {
+//         slidePosition = totalslides - 1;
+//     }else{
+//         slidePosition--
+//     }
+// }
 
 // carousel3
 const carousel = document.querySelector(".carousel"),
@@ -219,3 +219,68 @@ leftButton.addEventListener('click', function() {
     carousel1.style.left = '0%';
     }, 50);
 });
+
+
+// carrousel 1
+const carousel2 = document.querySelector('.splide__list');
+const cards1 = document.querySelectorAll('.testimonial');
+const leftButton1 = document.querySelector('#backward');
+const rightButton1 = document.querySelector('#forward');
+
+rightButton.addEventListener('click', function() {
+    const firstCard = carousel1.firstElementChild;
+    carousel1.appendChild(firstCard);
+    carousel1.style.left = '-33.33%';
+    setTimeout(function() {
+    carousel1.style.left = '0%';
+    }, 50);
+});
+
+leftButton.addEventListener('click', function() {
+    const lastCard = carousel1.lastElementChild;
+    carousel1.insertBefore(lastCard, carousel1.firstElementChild);
+    carousel1.style.left = '33.33%';
+    setTimeout(function() {
+    carousel1.style.left = '0%';
+    }, 50);
+});
+
+
+
+
+
+// const splide = document.querySelector(".splide");
+// const track = splide.querySelector(".splide__track");
+// const testimonials = splide.querySelectorAll(".testimonial");
+// const leftArrow = splide.querySelector("#backward");
+// const rightArrow = splide.querySelector("#forward");
+
+// let currentSlide = 0;
+// const slideWidth = testimonials[0].offsetWidth;
+
+// track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+
+// leftArrow.addEventListener("click", () => {
+//     currentSlide--;
+//     track.style.transition = "transform 0.4s ease-in-out";
+//     track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+// });
+
+// rightArrow.addEventListener("click", () => {
+//     currentSlide++;
+//     track.style.transition = "transform 0.4s ease-in-out";
+//     track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+// });
+
+// track.addEventListener("transitionend", () => {
+//     if (testimonials[currentSlide].id === "firstClone") {
+//         track.style.transition = "none";
+//         currentSlide = testimonials.length - 2;
+//         track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+//     }
+//     if (testimonials[currentSlide].id === "lastClone") {
+//         track.style.transition = "none";
+//         currentSlide = 1;
+//         track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+//     }
+// });
